@@ -5,8 +5,6 @@ const BookStore = async (req, res) => {
     // console.log(req.body)
     const { title, author, publisher, yearOfPublication, img } = req.body
 
-    console.log("inside")
-
     const book = new BookModel()
     book.title = title
     book.author = author
